@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #151616; /* Cor de fundo mais suave */
+    font-family: 'Poppins', sans-serif; /* Aplicando a fonte Poppins */
+}
+
+#container {
+    background-color: #d1f7cb; /* Verde claro para o contêiner */
+    width: 90%;
+    max-width: 900px;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(255, 253, 253, 0.1);
+}
+
+.tab-buttons {
+    display: flex;
+    gap: 6px;
+}
+
+.tab-btn {
+    transition: background-color 0.3s ease;
+    flex: 1;
+    border: none;
+    color: #fffafa;
+    background-color: #2ecc71; /* Verde mais escuro para os botões */
+    border-radius: 10px 10px 0 0;
+    font-weight: 500;
+    padding: 12px 0;
+    cursor: pointer;
+}
+
+.tab-btn.active {
+    background-color: #27ae60; /* Tom mais escuro para o botão ativo */
+}
+
+.tab-btn:hover {
+    background-color: #27ae60;
+}
+
+.content {
+    display: none;
+    width: 100%;
+}
+
+.content.show {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    background-color: #99c2a4;
+    border-radius: 0 0 10px 10px;
+    padding: 20px;
+}
+
+.content-img {
+    width: 150px; /* Reduzindo o tamanho da imagem */
+    max-height: 150px; /* Reduzindo o tamanho máximo da imagem */
+    object-fit: cover;
+    border-radius: 10px;
+    position: absolute; /* Posicionando a imagem absolutamente */
+    top: 10px;
+    left: 10px;
+}
+.content-video {
+    max-width: 100%; /* Garante que o vídeo não ultrapasse a largura do contêiner */
+    height: auto; /* Permite que a altura seja ajustada automaticamente proporcionalmente à largura */
+    max-height: 400px; /* Define a altura máxima do vídeo */
+    border: 5px solid #2ecc71; /* Adiciona uma borda de 5px sólida verde aos vídeos */
+    border-radius: 10px; /* Adiciona um raio de borda de 10px para arredondar as bordas */
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3); /* Adiciona uma sombra à moldura do vídeo */
+    margin: 20px auto; /* Adiciona margem superior e inferior de 20px e margem lateral automática para centralizar o vídeo */
+}
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Aumentando o espaçamento entre os ícones */
+    margin-top: 40px; /* Ajustando a margem superior */
+}
+
+.social-icon {
+    font-size: 24px;
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.social-icon:hover {
+    color: #27ae60;
+}
+
+.email-contact {
+    display: block; /* Garante que o email esteja em uma nova linha */
+    text-align: center; /* Centraliza o texto */
+    margin-top: 20px; /* Ajustando a margem superior */
+    color: #fff; /* Cor do texto */
+}
